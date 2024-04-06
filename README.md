@@ -13,7 +13,7 @@ Para o seguinte projeto, foi utilizado um ambiente virtual para instalação das
 
 `python3 -m venv .env` 
 
-`.env\Scripts\activate`  Caso surja um erro altere as permissões de execução de scripts do seu SO.
+`.env/Scripts/activate`  Caso surja um erro altere as permissões de execução de scripts do seu SO.
 
 `pip install -r requirements.txt`
 
@@ -24,10 +24,12 @@ Para iniciar o servidor entre no diretório raiz e pelo prompt e digite
 
 `python manage.py runserver`
 
-Agora você pode fazer requisições HTTP para a API utilizando o Postman, por exemplo. 
+Agora você pode fazer requisições HTTP para a API utilizando o Postman, por exemplo.
+A rota padrão é http://127.0.0.1:8000/cars, porém você pode filtrar por id utilizando http://127.0.0.1:8000/cars/id.
 
 ## Sobre
 Essa Api foi criada com a temática concessionária. Você pode adcionar, editar, receber e deletar dados sobre o model carro que implementei. (CRUD completo). Como requisitado, não foi implementado nenhum front-end, apenas as respostas do servidor em formado JSON.
+Caso você tente apagar todos os carros de uma vez, utlizando o método DELETE na rota http://127.0.0.1:8000/cars, o sistema que criei pedirá uma verificação adcional. 
 
 ## Model
 O model carro encontrado em `/carsApi/models.py` possui os seguintes atributos:<br>
