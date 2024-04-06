@@ -21,5 +21,6 @@ from carsApi import views
 urlpatterns = [ #Configura os caminhos (paths)
     path('admin/', admin.site.urls),
     path('cars/', views.car_List),
+    path('cars', views.car_List),
     path('cars/<int:id>', views.car_Detail)
 ]
