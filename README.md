@@ -25,7 +25,7 @@ Para iniciar o servidor entre no diretório raiz e pelo prompt e digite
 `python manage.py runserver`
 
 Agora você pode fazer requisições HTTP para a API utilizando o Postman, por exemplo.
-A rota padrão é http://127.0.0.1:8000/cars, porém você pode filtrar por id utilizando http://127.0.0.1:8000/cars/id.
+A rota padrão é http://127.0.0.1:8000/cars/ , porém você pode filtrar por id utilizando http://127.0.0.1:8000/cars/id.
 
 ## Sobre
 Essa Api foi criada com a temática concessionária. Você pode adcionar, editar, receber e deletar dados sobre o model carro que implementei. (CRUD completo). Como requisitado, não foi implementado nenhum front-end, apenas as respostas do servidor em formado JSON.
